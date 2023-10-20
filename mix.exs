@@ -37,7 +37,6 @@ defmodule KinoLiveView.MixProject do
       main: "readme",
       source_url: @source_url,
       assets: "assets",
-      extra_section: "GUIDES",
       extras: [
         "README.md",
       ]

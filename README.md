@@ -1,6 +1,6 @@
 # KinoLiveView
 
-[![Hex.pm](https://img.shields.io/hexpm/v/kino_live_view.svg)](https://hex.pm/packages/kino_live_view) [![Documentation](https://img.shields.io/badge/documentation-gray)](https://hexdocs.pm/kino_live_view)
+[![Hex.pm](https://img.shields.io/hexpm/v/kino_live_view.svg)](https://hex.pm/packages/kino_live_view) [![Documentation](https://img.shields.io/badge/documentation-gray)](https://hexdocs.pm/kino_live_view/0.1.0/readme.html)
 
 KinoLiveView lets you dynamically create LiveViews for your Phoenix Application from within a Livebook.
 
