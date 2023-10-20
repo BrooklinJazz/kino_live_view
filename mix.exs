@@ -1,6 +1,7 @@
 defmodule KinoLiveView.MixProject do
   use Mix.Project
   @source_url "https://github.com/brooklinjazz/kino_live_view"
+  @version "0.1.0"
 
   def project do
     [
