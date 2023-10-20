@@ -9,7 +9,8 @@ defmodule KinoLiveView.MixProject do
       elixir: "~> 1.15",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
-      package: package()
+      docs: docs(),
+      package: package(),
     ]
   end
 
@@ -26,6 +27,19 @@ defmodule KinoLiveView.MixProject do
       {:kino, "~> 0.10.0"},
       {:phoenix, "~> 1.7.7"},
       {:ex_doc, "~> 0.30.9"},
+    ]
+  end
+
+  defp docs do
+    [
+      source_ref: "v#{@version}",
+      main: "README",
+      source_url: @source_url,
+      assets: "assets",
+      extra_section: "GUIDES",
+      extras: [
+        "README.md",
+      ]
     ]
   end
 
