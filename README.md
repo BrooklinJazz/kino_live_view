@@ -18,12 +18,13 @@ def deps do
 end
 ```
 
-Configure `kino_live_view` in `dev.exs`. Replace `MyApp.PubSub` with your application's PubSub server.
+Configure `kino_live_view` in `dev.exs`. Replace `MyApp` with your application name.
 
 ```elixir
 config :kino_live_view,
   enabled: true,
   pubsub_server: MyApp.PubSub,
+  router_module: MyAppWeb.Router,
   socket: KinoLiveView.LiveReloader.Socket
 ```
 
@@ -71,7 +72,7 @@ Register the `KinoLiveView.SmartCell` in `application.ex`.
 
     # See https://hexdocs.pm/elixir/Supervisor.html
     # for other strategies and supported options
-    opts = [strategy: :one_for_one, name: PicMap.Supervisor]
+    opts = [strategy: :one_for_one, name: MyApp.Supervisor]
     Supervisor.start_link(children, opts)
   end
 ```

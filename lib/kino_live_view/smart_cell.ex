@@ -66,7 +66,7 @@ defmodule KinoLiveView.SmartCell do
     |> put_routes()
 
     # recompile the router to use updated routes
-    IEx.Helpers.r(PicMapWeb.Router)
+    IEx.Helpers.r(Application.fetch_env!(:kino_live_view_native, :router_module))
 
     # trigger live reload
     KinoLiveView.LiveReloader.reload()
