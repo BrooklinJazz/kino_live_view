@@ -98,6 +98,8 @@ defmodule KinoLiveView.SmartCell do
     if is_registered_live_view?(module_name) do
       Logger.info("Replacing existing LiveView #{module_name}")
       Livebook.Runtime.Evaluator.delete_module(module_name)
+    else
+      Logger.info("Creating LiveView #{module_name}")
     end
 
     quote do
